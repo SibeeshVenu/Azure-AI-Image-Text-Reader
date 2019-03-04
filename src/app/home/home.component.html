@@ -1,0 +1,18 @@
+<mat-card class="searchbox">
+  <mat-form-field>
+    <input matInput placeholder="Enter your url" [formControl]="url" required>
+    <mat-error *ngIf="url.hasError('required')">
+      Please enter a Url
+    </mat-error>
+    <mat-error *ngIf="url.hasError('pattern')">
+      Given Url is Invalid
+    </mat-error>
+  </mat-form-field>
+  <button [disabled]="url.invalid" (click)="submit()" mat-button color="primary">Submit</button>
+</mat-card>
+<mat-card>
+  {{stringResult | json}}
+</mat-card>
+<mat-card *ngIf="submitted">
+  <img mat-card-image [src]="url.value" alt="Given photo">
+</mat-card>
