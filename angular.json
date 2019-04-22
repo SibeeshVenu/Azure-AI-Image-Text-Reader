@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ngDragDrop": {
+    "azure-ai-image-text-reader": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ngDragDrop",
+            "outputPath": "dist/azure-ai-image-text-reader",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ngDragDrop:build"
+            "browserTarget": "azure-ai-image-text-reader:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ngDragDrop:build:production"
+              "browserTarget": "azure-ai-image-text-reader:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ngDragDrop:build"
+            "browserTarget": "azure-ai-image-text-reader:build"
           }
         },
         "test": {
@@ -108,7 +108,7 @@
         }
       }
     },
-    "ngDragDrop-e2e": {
+    "azure-ai-image-text-reader-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -117,11 +117,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "ngDragDrop:serve"
+            "devServerTarget": "azure-ai-image-text-reader:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "ngDragDrop:serve:production"
+              "devServerTarget": "azure-ai-image-text-reader:serve:production"
             }
           }
         },
@@ -137,5 +137,5 @@
       }
     }
   },
-  "defaultProject": "ngDragDrop"
+  "defaultProject": "azure-ai-image-text-reader"
 }
